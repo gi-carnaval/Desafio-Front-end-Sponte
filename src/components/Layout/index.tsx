@@ -12,10 +12,8 @@ export function Layout({ children }: LayoutProps) {
 
   useEffect(() => {
     
-    // console.log("Width: ", screenWidth)
     function handleScroll() {
       const screenWidth = window.innerWidth
-      console.log("Entrou")
       if(screenWidth <= 768){
         setIsSidebarActive(false)
       } else {
